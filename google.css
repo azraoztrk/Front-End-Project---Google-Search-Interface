@@ -1,0 +1,128 @@
+.navbar{
+    background-color: white;
+}
+
+.container{
+    display: flex;              /* İçindekileri yatayda hizala */
+    align-items: center;        /* Dikeyde ortalar. display:flex kullandıklarımızda işe yarar. */
+    justify-content: end;       /* Elemanları sağa yaslar. display:flex kullanıklarımızda işe yarar. */
+    margin: 5px;                /* Dış boşluk */
+}
+
+a#gmail{
+    margin: 5px;                /* Link etrafında boşluk */
+    text-decoration: none;      /* Alt çizgiyi kaldır */
+    color: inherit;             /* Renk olarak navbarın renkini al */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+
+a#gorseller{
+    margin: 5px;
+    text-decoration: none;
+    color: inherit;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+
+#googleyazısı{
+    text-align: center;         /* Metni yatayda ortala */
+    margin-top: 150px;          /* Üstten boşluk ver */
+}
+
+
+/* Arama kutusunu içeren form */
+.searchcontainer form{
+    display: flex;              /* İçindekileri yatayda hizala */
+    flex-direction: column;     /* Dikeyde sıralama */
+    align-items: center;        /* Dikeyde ortala */
+}
+
+.searchbox {
+    position: relative;         /* Arama ikonunu içinde konumlandırmak için */
+    width: 500px;               /* Genişlik */
+}
+
+.searchinput{
+    width: 500px;                  /*genişlik*/
+    padding: 10px 20px 10px 40px;  /* İç boşluk; soldaki 40px ikon için */ /*kalınlığı ve google'da ara yazısının konumu*/
+    border: 1px solid #dcdcdc;   /* Kenarlık rengi */
+    border-radius: 999px;          /*yuvarlaklığı verdik*/
+    outline: none;                 /*tıklayınca kenarlarında çıkan o mavi çerçeveyi kaldırdı*/
+    font-size: 16px;               /*google'da ara yazısını büyülttük*/
+    transition: box-shadow 0.3s;   /* Hover vs efekt geçişi */
+    box-shadow: 0 0 8px rgba(0, 0 ,0 ,0.2);   /*gölge yaptık*/
+    border-color: #a6bfe3;       /* Kenarlık rengi */
+}
+
+.searchbtn{
+    background: none;             /* Arka plan yok */
+    border: none;                 /* Kenarlık yok */
+    position: absolute;           /* Searchbox içinde konumlandır */
+    left: 10px;                   /* Soldan uzaklık */
+    top: 50%;                     /* Dikey ortala */
+    transform: translateY(-50%);  /* Tam ortalama */
+    cursor: pointer;              /* İmleç değişir */
+    padding: 0;                   /* İç boşluk yok */
+}
+
+.searchicon{
+    font-size: 18px;
+    color: #555;
+}
+
+.searchbuttons {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+.searchbuttons input[type="submit"] {
+    background-color: #f8f9fa;         /* Buton arka planı */
+    border: 1px solid #f8f9fa;         /* Kenarlık */
+    padding: 8px 16px;                   /* normal buton boyutu */
+    margin: 5px;
+    font-size: 14px;
+    border-radius: 4px;                  /* Hafif yuvarlak köşe */
+    cursor: pointer;                     /* İmleç değişir */
+    transition: all 0.2s;                /* Hover efekti geçişi */
+}
+
+
+/* Hover durumunda buton efekti */
+.searchbuttons input[type="submit"]:hover {
+    border: 1px solid #dadce0;                /* Hover kenarlık rengi */
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);    /* Hafif gölge */
+}
+
+
+.bottomnavbar {
+    position: fixed;               /* Sabit konum */
+    bottom: 0;                     /* Sayfanın altında */
+    width: 100vw;
+    left: 0;                       /* Sol kenara hizala */
+    background-color: rgb(230, 227, 227);
+    z-index: 1000;                 /* üstte görünmesi için */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);     /* isteğe bağlı gölge */
+}
+
+
+/* Alt navbar iç container */
+.container1{
+    display: flex;                   /* İçindekileri yatayda hizala */
+    justify-content: space-between;  /* sol ve sağ linkleri ayırır */
+    padding: 0 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+/* Alt navbar linkleri */
+.leftlinks a,.rightlinks a {
+    margin: 0 5px;
+    text-decoration: none;         /* Alt çizgi yok */
+    color: inherit;                /* Renk navbar ile aynı */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+
